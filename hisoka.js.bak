@@ -1196,7 +1196,7 @@ key: {
 }
          break
 
-         case 'play2':{
+         case 'play':{
   if (!text) throw `Example : play2 Heatwaves`
       let yts = require("yt-search")
       let datai = [];
@@ -1229,7 +1229,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }
             break
                 
-	    case 'play': case'song': {
+	     case'song': {
                 if (!text) throw `Example : ${prefix + command} dusk till dawn`
                 let yts = require("yt-search")
                 let search = await yts(`${text} song`)
