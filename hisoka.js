@@ -1888,7 +1888,7 @@ case 'allmenu': {
 break
 
             case 'owner': case 'creator': {
-                hisoka.sendContact(m.chat, global.owner, lordofc)
+                hisoka.sendContact(m.chat, global.owner, fvid)
                 
             }
             break
