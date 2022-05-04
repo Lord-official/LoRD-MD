@@ -31,10 +31,10 @@ const fvid = {
                 },
 	 message: { 
                  "videoMessage": { 
-                 "title": `${pushname}`,
-                 "h": ` ${pushname}`,
+                 "title": `LoRD-MD`,
+                 "h": `LoRD-MD`,
                  'duration': '99999', 
-                 'caption': `${pushname}`,
+                 'caption': `LoRD-MD`,
                  'jpegThumbnail': global.thumb
                         }
                        }
