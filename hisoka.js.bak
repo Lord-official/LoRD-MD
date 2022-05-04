@@ -22,6 +22,24 @@ const primbon = new Primbon()
 const { smsg, formatp, tanggal, formatDate, getTime, isUrl, sleep, clockString, runtime, fetchJson, getBuffer, jsonformat, format, parseMention, getRandom } = require('./lib/myfunc')
 
 //quoted
+// VIDEO
+const fvid = {
+	 key: { 
+          fromMe: false,
+	      participant: `0@s.whatsapp.net`, ...(from ? 
+	 { remoteJid: "120363040549014341@g.us" } : {}) 
+                },
+	 message: { 
+                 "videoMessage": { 
+                 "title": `${pushname}`,
+                 "h": ` ${pushname}`,
+                 'duration': '99999', 
+                 'caption': `${pushname}`,
+                 'jpegThumbnail': global.thumb
+                        }
+                       }
+	                  }
+//ftick
 const lordofc = {
 	key : {
                           participant : "0@s.whatsapp.net",
@@ -1738,7 +1756,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
             }), {})
             hisoka.relayMessage(m.chat, template.message, { messageId: template.key.id })
             const lordser = fs.readFileSync('./src/lord.mp3') //u can change the music in src folder
-           hisoka.sendMessage(m.chat, { audio: lordser, mimetype: 'audio/mp4', ptt: true, quoted: lordofc })
+           hisoka.sendMessage(m.chat, { audio: lordser, mimetype: 'audio/mp4', ptt: true, quoted: fvid })
             }
             break
 case 'allmenu': {
