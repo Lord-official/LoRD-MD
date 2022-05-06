@@ -59,7 +59,7 @@ const lordofc = {
                         }
                       }
 //tod Link
- const teksnye =[
+ const todlink =[
 'https://youtu.be/IiYRFELAC0s',
 'https://youtu.be/bNoFWGc1iJ0',
 'https://youtu.be/DKm8Fg7dAp0',
@@ -95,7 +95,7 @@ const lordofc = {
 'https://youtu.be/iuHy1fHikVo',
 'https://youtu.be/TwbhA23jSsw',
 ]
-let tod = teksnye[Math.floor(Math.random() * (teksnye.length))]
+let tod = todlink[Math.floor(Math.random() * (todlink.length))]
 
 ///Button Document
 const sendButDocument = async(id, text1, desc1, media, doc1, but = [], options = {}) => {
@@ -1379,17 +1379,12 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-	        case 'instagram': case 'ig': case 'igdl': {
-                if (!text) throw 'Enter Query Url!'
-                replay(mess.wait)
-                if (/(?:\/p\/|\/reel\/|\/tv\/)([^\s&]+)/.test(isUrl(text)[0])) {
-                    let anu = await fetchJson(api('zenz', '/downloader/instagram2', { url: isUrl(text)[0] }, 'apikey'))
-                    for (let media of anu.data) hisoka.sendMedia(m.chat, media, '', `Download Url Instagram From ${isUrl(text)[0]}`, m)
-                } else if (/\/stories\/([^\s&]+)/.test(isUrl(text)[0])) {
-                    let anu = await fetchJson(api('zenz', '/downloader/instastory', { url: isUrl(text)[0] }, 'apikey'))
-                    hisoka.sendMedia(m.chat, anu.media[0].url, '', `Download Url Instagram From ${isUrl(text)[0]}`, m)
-                }
-            }
+           case 'instagram': case 'ig': case 'insta': {
+              let scraper = require('@bochilteam/scraper')
+  if (!args[0]) throw 'Url ?'
+  let res = await scraper.instagramdl(args[0])
+  for (let i = 0; i < res.length; i++) await hisoka.sendMedia(m.chat, res[i].url, '', '', m)
+}
             break
             case 'soundcloud': case 'scdl': {
                 if (!text) throw 'No Query Title'
