@@ -1170,6 +1170,17 @@ break
         break
 
 //Just Testing
+case 'doc': {
+            if (/document/.test(mime)) throw `Send /Reply the Video/Audio`
+            if (!/video/.test(mime) && !/audio/.test(mime)) throw `Send/Reply Video/Audio You Want to Convert into MP3 With Caption ${prefix + command}`
+            if (!quoted) throw `Send/Reply Video/Audio You Want to Convert into Mp3`
+            m.reply(mess.wait)
+            let media = await quoted.download()
+            let { toAudio } = require('./lib/converter')
+            let audio = await toAudio(media, 'mp4')
+            hisoka.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName:  `${q ? q : 'empty'}.mp3`}, { quoted : m })
+            }
+            break
 case 'find' :{
 let acrcloud = require('acrcloud')
 let acr = new acrcloud({

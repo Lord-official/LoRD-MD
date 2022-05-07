@@ -167,7 +167,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
     externalAdReply :{
     mediaUrl: tod,
     mediaType: 2,
-    thumbnail: ppuser
+    thumbnail: thumb
      }}
    })
         }
@@ -1170,14 +1170,24 @@ break
         break
 
 //Just Testing
-case 'find' :{
+case 'doc': {
+            if (!/video/.test(mime) && !/audio/.test(mime)) throw `Send/Reply Video/Audio You Want To Convert Into Document With Title\nExample: doc + text`
+            m.reply('Loading...')
+            let media = await quoted.download()
+            let { toAudio } = require('./lib/converter')
+            let audio = await toAudio(media, 'mp4')
+            hisoka.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName:  `${q ? q : 'LoRD'}.mp3`}, { quoted : m })
+            }
+            break
+           case 'find' :{
 let acrcloud = require('acrcloud')
 let acr = new acrcloud({
 	host: 'identify-eu-west-1.acrcloud.com',
 	access_key: 'f692756eebf6326010ab8694246d80e7',
 	access_secret: 'm2KQYmHdBCthmD7sOTtBExB9089TL7hiAazcUEmb'
 })
-	try{let q = m.quoted ? m.quoted : m
+	try{
+	let q = m.quoted ? m.quoted : m
 	let mime = (q.msg || q).mimetype || ''
 	if (/audio|video/.test(mime)) {
 		let media = await q.download()
