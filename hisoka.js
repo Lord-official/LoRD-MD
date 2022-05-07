@@ -167,7 +167,7 @@ module.exports = hisoka = async (hisoka, m, chatUpdate, store) => {
     externalAdReply :{
     mediaUrl: tod,
     mediaType: 2,
-    thumbnail: thumb
+    thumbnail: ppuser
      }}
    })
         }

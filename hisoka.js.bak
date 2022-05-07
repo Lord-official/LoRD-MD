@@ -1379,25 +1379,13 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 hisoka.sendMessage(m.chat, buttonMessage, { quoted: m })
             }
             break
-         /*  case 'instagram': case 'ig': case 'insta': {
+           case 'instagram': case 'ig': case 'insta': {
               let scraper = require('@bochilteam/scraper')
   if (!args[0]) throw 'Url ?'
   let res = await scraper.instagramdl(args[0])
   for (let i = 0; i < res.length; i++) await hisoka.sendMedia(m.chat, res[i].url, '', '', m)
 }
-            break */
-            case 'ig':
-case 'igdl':
-case 'instagram':
-const c = args.join(' ')
-if (!args[0]) throw 'Linknya?'
-var { igDownloader } = require('./lib/igdown')
-   res = await igDownloader(`${c}`).catch(e => {
-reply(mess.error.api)
-})
-console.log(res)
-sendMessage(m.chat,`${res.result.link}`,`${res.result.desc}`)
-                    break
+            break
             case 'soundcloud': case 'scdl': {
                 if (!text) throw 'No Query Title'
                 m.reply(mess.wait)
