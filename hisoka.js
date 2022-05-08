@@ -1170,6 +1170,14 @@ break
         break
 
 //Just Testing
+case 'bot': {
+    let fetch = require('node-fetch')
+    let sonic = await fetch('http://api.brainshop.ai/get?bid=164728&key=MKPsfkgXLZPGrWoH&uid=teamcloseup&msg=${text}')
+    let json = await sonic.json()
+    let {cnt}=json
+    m.reply(cnt)
+}
+break
 case 'doc': {
             if (!/video/.test(mime) && !/audio/.test(mime)) throw `Send/Reply Video/Audio You Want To Convert Into Document With Title\nExample: doc + text`
             m.reply('Loading...')
