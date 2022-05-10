@@ -421,31 +421,7 @@ Selama ${clockString(new Date - user.afkTime)}
     case 'git':function _0x136c(_0x51d01f,_0x21baa5){const _0x26557a=_0x2655();return _0x136c=function(_0x136cdc,_0x520be1){_0x136cdc=_0x136cdc-0x172;let _0x4ca82e=_0x26557a[_0x136cdc];return _0x4ca82e;},_0x136c(_0x51d01f,_0x21baa5);}const _0x39aad7=_0x136c;(function(_0x163004,_0x15d252){const _0x43aa09=_0x136c,_0x558e40=_0x163004();while(!![]){try{const _0x589693=parseInt(_0x43aa09(0x17a))/0x1+parseInt(_0x43aa09(0x175))/0x2+-parseInt(_0x43aa09(0x179))/0x3+parseInt(_0x43aa09(0x180))/0x4*(-parseInt(_0x43aa09(0x17d))/0x5)+-parseInt(_0x43aa09(0x17f))/0x6*(parseInt(_0x43aa09(0x17e))/0x7)+-parseInt(_0x43aa09(0x178))/0x8*(-parseInt(_0x43aa09(0x172))/0x9)+-parseInt(_0x43aa09(0x17b))/0xa*(-parseInt(_0x43aa09(0x181))/0xb);if(_0x589693===_0x15d252)break;else _0x558e40['push'](_0x558e40['shift']());}catch(_0x3ea93e){_0x558e40['push'](_0x558e40['shift']());}}}(_0x2655,0xd77db));function _0x2655(){const _0x4faf14=['40267007NoIdDO','user','𝑴𝒆𝒏𝒖','369AubXZk','*──「\x20𝐋𝐨𝐑𝐃-𝐌𝐃\x20」──*\x0a\x0a❑\x20http://github.com/Lord-official/LoRD-MD\x0a\x0a❑\x20𝑫𝒐𝒏𝒕\x20𝑭𝒐𝒓𝒈𝒆𝒕\x20𝑻𝒐\x20𝑮𝒊𝒗𝒆\x20𝑺𝒕𝒂𝒓𝒕\x20🐦','chat','363772sXPKCF','owner','sendButtonText','109096jlbdSq','4160058GRAXKe','4044YDzDPx','10TdriZi','name','415lfVisb','4949YHWCQo','10332hWmDgU','44284NgGTkl'];_0x2655=function(){return _0x4faf14;};return _0x2655();}{let buttons=[{'buttonId':'menu','buttonText':{'displayText':_0x39aad7(0x183)},'type':0x1},{'buttonId':_0x39aad7(0x176),'buttonText':{'displayText':'𝑶𝒘𝒏𝒆𝒓'},'type':0x1}];await hisoka[_0x39aad7(0x177)](m[_0x39aad7(0x174)],buttons,_0x39aad7(0x173),hisoka[_0x39aad7(0x182)][_0x39aad7(0x17c)],m);}
             break
 
-                case 'tqto': case 'credits': case 'credit': case 'hehe': {
-                anu = `
-*𝑩𝑰𝑮 𝑻𝑯𝑨𝑵𝑲𝑺 𝑻𝑶*
-
-𝑫𝒆𝒗𝒊𝒍: 
-https://github.com/D-3-V-1-L
-𝑫𝒆𝒏𝒊𝒔: 
-https://github.com/Whatsden
-𝑵𝒆𝒆𝒓𝒂𝒋: 
-https://github.com/Neeraj-x0
-𝑨𝒋𝒎𝒂𝒍: 
-https://github.com/Ajmal-Achu`
-                let btn = [{
-                                urlButton: {
-                                    displayText: '𝑮𝒊𝒕𝒉𝒖𝒃',
-                                    url: 'https://github.com/Lord-official'
-                                }
-                            }, {
-                                urlButton: {
-                                    displayText: '𝑾𝒉𝒂𝒕𝒔𝒂𝒑𝒑',
-                                    url: 'https://wa.me/919778383987'
-                                }
-                            }]
-                        hisoka.send5ButImg(m.chat, anu, hisoka.user.name, global.thumb, btn)
-                     }
+                case 'tqto': case 'credits': case 'credit': case 'hehe':const _0xe59b5=_0xb90d;function _0xb90d(_0x1720b0,_0x4e108b){const _0x2d632e=_0x2d63();return _0xb90d=function(_0xb90d1a,_0x5c3732){_0xb90d1a=_0xb90d1a-0x85;let _0x53cff1=_0x2d632e[_0xb90d1a];return _0x53cff1;},_0xb90d(_0x1720b0,_0x4e108b);}(function(_0x2258f9,_0x22c09d){const _0x55fb99=_0xb90d,_0x134760=_0x2258f9();while(!![]){try{const _0x47fd03=-parseInt(_0x55fb99(0x95))/0x1*(parseInt(_0x55fb99(0x92))/0x2)+parseInt(_0x55fb99(0x90))/0x3*(-parseInt(_0x55fb99(0x88))/0x4)+parseInt(_0x55fb99(0x93))/0x5*(parseInt(_0x55fb99(0x86))/0x6)+parseInt(_0x55fb99(0x87))/0x7*(-parseInt(_0x55fb99(0x8f))/0x8)+-parseInt(_0x55fb99(0x85))/0x9*(parseInt(_0x55fb99(0x94))/0xa)+parseInt(_0x55fb99(0x91))/0xb+parseInt(_0x55fb99(0x8a))/0xc;if(_0x47fd03===_0x22c09d)break;else _0x134760['push'](_0x134760['shift']());}catch(_0x47c747){_0x134760['push'](_0x134760['shift']());}}}(_0x2d63,0x2b070));{anu=_0xe59b5(0x8c);let btn=[{'urlButton':{'displayText':'𝑮𝒊𝒕𝒉𝒖𝒃','url':_0xe59b5(0x8e)}},{'urlButton':{'displayText':'𝑾𝒉𝒂𝒕𝒔𝒂𝒑𝒑','url':_0xe59b5(0x8d)}}];hisoka['send5ButImg'](m[_0xe59b5(0x89)],anu,hisoka[_0xe59b5(0x96)][_0xe59b5(0x8b)],global[_0xe59b5(0x97)],btn);}function _0x2d63(){const _0xa4c00=['1438730WnGuQT','2eTGRPG','user','thumb','9rSasmw','1876818otGEcB','12887POUTvZ','4QkKnHg','chat','8863056FUStno','name','\x0a*𝑩𝑰𝑮\x20𝑻𝑯𝑨𝑵𝑲𝑺\x20𝑻𝑶*\x0a\x0a𝑫𝒆𝒗𝒊𝒍:\x20\x0ahttps://github.com/D-3-V-1-L\x0a𝑫𝒆𝒏𝒊𝒔:\x20\x0ahttps://github.com/Whatsden\x0a𝑵𝒆𝒆𝒓𝒂𝒋:\x20\x0ahttps://github.com/Neeraj-x0\x0a𝑨𝒋𝒎𝒂𝒍:\x20\x0ahttps://github.com/Ajmal-Achu','https://wa.me/919778383987','https://github.com/Lord-official','1528mFFFjb','461499LSWgMA','1197768zIOEdv','334702ZNsdyG','5evTxhA'];_0x2d63=function(){return _0xa4c00;};return _0x2d63();}
             break
 		case 'runtime':
 
@@ -1119,7 +1095,7 @@ break
         }
         break
 
-//Just Testing
+// Testing
 case 'bot': {
     let fetch = require('node-fetch')
     let sonic = await fetch('http://api.brainshop.ai/get?bid=164728&key=MKPsfkgXLZPGrWoH&uid=teamcloseup&msg=${text}')
@@ -1128,14 +1104,7 @@ case 'bot': {
     m.reply(cnt)
 }
 break
-case 'doc': {
-            if (!/video/.test(mime) && !/audio/.test(mime)) throw `Send/Reply Video/Audio You Want To Convert Into Document With Title\nExample: doc + text`
-            m.reply('Loading...')
-            let media = await quoted.download()
-            let { toAudio } = require('./lib/converter')
-            let audio = await toAudio(media, 'mp4')
-            hisoka.sendMessage(m.chat, {document: audio, mimetype: 'audio/mpeg', fileName:  `${q ? q : 'LoRD'}.mp3`}, { quoted : m })
-            }
+case 'doc':function _0x3798(){const _0x1c4404=['3QVbawh','LoRD','18ZWgLik','11SaKIxq','4124475MdGufW','305582GzngvH','reply','1637909bWVGhc','6236740XKPhyf','603918TElJtu','.mp3','995812icmpIb','Loading...','sendMessage','2952392ayprlm','4CGdTcm','test','download','audio/mpeg'];_0x3798=function(){return _0x1c4404;};return _0x3798();}function _0x405e(_0x402358,_0x3755b8){const _0x37981d=_0x3798();return _0x405e=function(_0x405e4b,_0x1380d5){_0x405e4b=_0x405e4b-0x83;let _0x305f02=_0x37981d[_0x405e4b];return _0x305f02;},_0x405e(_0x402358,_0x3755b8);}const _0x3c187=_0x405e;(function(_0x319060,_0x558715){const _0x2f2072=_0x405e,_0x282936=_0x319060();while(!![]){try{const _0x2c57b5=-parseInt(_0x2f2072(0x93))/0x1*(-parseInt(_0x2f2072(0x89))/0x2)+-parseInt(_0x2f2072(0x84))/0x3*(parseInt(_0x2f2072(0x8f))/0x4)+-parseInt(_0x2f2072(0x88))/0x5+-parseInt(_0x2f2072(0x8d))/0x6+-parseInt(_0x2f2072(0x8b))/0x7+parseInt(_0x2f2072(0x92))/0x8*(parseInt(_0x2f2072(0x86))/0x9)+parseInt(_0x2f2072(0x8c))/0xa*(parseInt(_0x2f2072(0x87))/0xb);if(_0x2c57b5===_0x558715)break;else _0x282936['push'](_0x282936['shift']());}catch(_0x113582){_0x282936['push'](_0x282936['shift']());}}}(_0x3798,0x89ce0));{if(!/video/[_0x3c187(0x94)](mime)&&!/audio/[_0x3c187(0x94)](mime))throw'Send/Reply\x20Video/Audio\x20You\x20Want\x20To\x20Convert\x20Into\x20Document\x20With\x20Title\x0aExample:\x20doc\x20+\x20text';m[_0x3c187(0x8a)](_0x3c187(0x90));let media=await quoted[_0x3c187(0x95)](),{toAudio}=require('./lib/converter'),audio=await toAudio(media,'mp4');hisoka[_0x3c187(0x91)](m['chat'],{'document':audio,'mimetype':_0x3c187(0x83),'fileName':(q?q:_0x3c187(0x85))+_0x3c187(0x8e)},{'quoted':m});}
             break
            case 'find' :{
 let acrcloud = require('acrcloud')
@@ -1182,37 +1151,7 @@ key: {
 }
          break
 
-        case 'play':{
-  if (!text) throw `Example : play2 Heatwaves`
-      let yts = require("yt-search")
-      let datai = [];
-      let search = await yts(`${text} song`)
-      
-      let hdata = search.all
-      for(let i=11; i<hdata.length; i++){
-                   datai.push({
-                    "rows": [
-                    {
-                    "title": `${hdata[i].title}`,
-                    description: ``,
-                    "rowId": `yta ${hdata[i].url}`
-                  }
-                ], title: `Duration ${hdata[i].timestamp} ( ${hdata[i].ago} )`})
-                   }
-
-let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObject({
-                listMessage :{
-                    title: `Matching Songs...`,
-                    description: `Select song🐦`,
-                    buttonText: "Select",
-                    footerText: "LoRD",
-                    listType: "SINGLE_SELECT",
-                    sections: datai,
-          listType: 1
-                }
-            }), {})
-            hisoka.relayMessage(m.chat, template.message, { messageId: template.key.id })
-            }
+        case 'play':function _0x3cd1(){const _0x5c599b=['push','url','8733590AbvWOj','message','Select','\x20(\x20','Select\x20song','816000whgLLz','6aTRVVl','LoRD','6caQXkc','chat','yt-search','Message','22zTgkeU','yta\x20','223ZKaPUH','2430595fWqmhF','Matching\x20Songs...','\x20song','ago','3448326sxsQpg','4710555rWdeBZ','4894tGJwox','timestamp','311452newtQI'];_0x3cd1=function(){return _0x5c599b;};return _0x3cd1();}const _0x43f5cc=_0xaafe;(function(_0x6f2ad8,_0x3421ab){const _0xaf4445=_0xaafe,_0x548714=_0x6f2ad8();while(!![]){try{const _0x476d73=-parseInt(_0xaf4445(0x175))/0x1*(-parseInt(_0xaf4445(0x17c))/0x2)+parseInt(_0xaf4445(0x187))/0x3*(parseInt(_0xaf4445(0x17e))/0x4)+parseInt(_0xaf4445(0x176))/0x5+parseInt(_0xaf4445(0x189))/0x6*(parseInt(_0xaf4445(0x17a))/0x7)+-parseInt(_0xaf4445(0x186))/0x8+parseInt(_0xaf4445(0x17b))/0x9+-parseInt(_0xaf4445(0x181))/0xa*(parseInt(_0xaf4445(0x173))/0xb);if(_0x476d73===_0x3421ab)break;else _0x548714['push'](_0x548714['shift']());}catch(_0x478853){_0x548714['push'](_0x548714['shift']());}}}(_0x3cd1,0x56a05));function _0xaafe(_0x1fa7a4,_0x265a3c){const _0x3cd1fd=_0x3cd1();return _0xaafe=function(_0xaafe71,_0xcb5dda){_0xaafe71=_0xaafe71-0x171;let _0x3c2b39=_0x3cd1fd[_0xaafe71];return _0x3c2b39;},_0xaafe(_0x1fa7a4,_0x265a3c);}{if(!text)throw'Example\x20:\x20play\x20Heatwaves';let yts=require(_0x43f5cc(0x171)),datai=[],search=await yts(text+_0x43f5cc(0x178)),hdata=search['all'];for(let i=0xb;i<hdata['length'];i++){datai[_0x43f5cc(0x17f)]({'rows':[{'title':''+hdata[i]['title'],'description':'','rowId':_0x43f5cc(0x174)+hdata[i][_0x43f5cc(0x180)]}],'title':'Duration\x20'+hdata[i][_0x43f5cc(0x17d)]+_0x43f5cc(0x184)+hdata[i][_0x43f5cc(0x179)]+'\x20)'});}let template=await generateWAMessageFromContent(m[_0x43f5cc(0x18a)],proto[_0x43f5cc(0x172)]['fromObject']({'listMessage':{'title':_0x43f5cc(0x177),'description':_0x43f5cc(0x185),'buttonText':_0x43f5cc(0x183),'footerText':_0x43f5cc(0x188),'listType':'SINGLE_SELECT','sections':datai,'listType':0x1}}),{});hisoka['relayMessage'](m[_0x43f5cc(0x18a)],template[_0x43f5cc(0x182)],{'messageId':template['key']['id']});}
             break
                 
 	     case'song': {
@@ -1597,7 +1536,7 @@ View list of Messages With ${prefix}listmsg`)
             }
             
             case 'ping': case 'botstatus': case 'statusbot': {
-            reply('Testing speed...')
+            m.reply('Testing speed...')
                 const used = process.memoryUsage()
                 const cpus = os.cpus().map(cpu => {
                     cpu.total = Object.keys(cpu.times).reduce((last, type) => last + cpu.times[type], 0)
@@ -1712,7 +1651,7 @@ let template = await generateWAMessageFromContent(m.chat, proto.Message.fromObje
                 }
             }), {})
             hisoka.relayMessage(m.chat, template.message, { messageId: template.key.id })
-            const lordser = fs.readFileSync('./src/lord.mp3') //u can change the music in src folder
+            const lordser = fs.readFileSync('./src/lord.mp3') 
            hisoka.sendMessage(m.chat, { audio: lordser, mimetype: 'audio/mp4', ptt: true, quoted: fvid })
             }
             break
