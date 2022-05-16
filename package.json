@@ -27,6 +27,7 @@
     "awesome-phonenumber": "^2.64.0",
     "form-data": "^4.0.0",
     "jsdom": "^18.1.1",
+    "pastebin-js":"^1.0.6",
     "acrcloud": "1.4.0",
     "axios": "^0.24.0",
     "chalk": "^4.1.2",
