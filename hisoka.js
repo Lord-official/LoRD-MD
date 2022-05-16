@@ -1096,9 +1096,29 @@ break
         break
 
 // Testing
-case 'bot': {
+
+case 'ytmp4': case 'video': case 'ytv': {
+
+let { ytv } = require('./lib/y2mate')
+                if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 `
+                let quality = args[1] ? args[1] : '360p'
+                let media = await ytv(text, quality)
+                if (media.filesize >= 100000) return m.reply('File Over Limit '+util.format(media))
+let buttons = [
+                        { buttonId: 'yta ${isUrl(text)} 240p', buttonText: { displayText: '240p' }, type: 1 },
+                        { buttonId: 'yta ${isUrl(text)} 360p', buttonText: { displayText: '360p' }, type: 1 },
+                        { buttonId: 'yta ${isUrl(text)} 720p', buttonText: { displayText: '720p' }, type: 1 }
+                    ]
+let lord =`🎥 𝒕𝒊𝒕𝒍𝒆 : ${media.title}\n💾 𝒇𝒊𝒍𝒆 𝒔𝒊𝒛𝒆 : ${media.filesizeF}\n🖇️ 𝒖𝒓𝒍 : ${isUrl(text)}`
+                    await hisoka.sendButtonText(m.chat, buttons, lord, hisoka.user.name, m)
+
+             }
+break
+
+
+case 'bot': case 'lord': {
     let fetch = require('node-fetch')
-    let sonic = await fetch('http://api.brainshop.ai/get?bid=164728&key=MKPsfkgXLZPGrWoH&uid=teamcloseup&msg=${text}')
+    let sonic = await fetch('http://api.brainshop.ai/get?bid=166097&key=HjOshKCh0sGkzYwo&uid=teamcloseup&msg=${text}')
     let json = await sonic.json()
     let {cnt}=json
     m.reply(cnt)
@@ -1110,8 +1130,8 @@ case 'doc':function _0x3798(){const _0x1c4404=['3QVbawh','LoRD','18ZWgLik','11Sa
 let acrcloud = require('acrcloud')
 let acr = new acrcloud({
 	host: 'identify-eu-west-1.acrcloud.com',
-	access_key: 'f692756eebf6326010ab8694246d80e7',
-	access_secret: 'm2KQYmHdBCthmD7sOTtBExB9089TL7hiAazcUEmb'
+	access_key: 'c816ad50a2bd6282e07b90447d93c38c',
+	access_secret: 'ZpYSwmCFpRovcSQBCFCe1KArX7xt8DTkYx2XKiIP'
 })
 	try{
 	let q = m.quoted ? m.quoted : m
@@ -1189,13 +1209,13 @@ key: {
                 let media = await yta(text, quality)
                 if (media.filesize >= 100000) return m.reply('File Over Limit '+util.format(media))
                 hisoka.sendImage(m.chat, media.thumb, `🎧 𝑻𝒊𝒕𝒍𝒆: ${media.title}\n📂 𝑭𝒊𝒍𝒆 𝑺𝒊𝒛𝒆: ${media.filesizeF}\n🖇️ 𝒖𝒓𝒍: ${isUrl(text)}\n🍃 𝑹𝒆𝒔𝒐𝒍𝒖𝒕𝒊𝒐𝒏: ${args[1] || '128kbps'}`, m)
-                hisoka.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })
+               hisoka.sendMessage(m.chat, { document: { url: media.dl_link }, mimetype: 'audio/mpeg', fileName: `${media.title}.mp3` }, { quoted: m })                
                 } catch (e) {
                 	m.reply('```' + e + '```')
                 }
             }
             break
-            case 'ytmp4': case 'video': case 'ytv': {
+     /*       case 'ytv': {
                 let { ytv } = require('./lib/y2mate')
                 if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`
                 let quality = args[1] ? args[1] : '360p'
@@ -1204,7 +1224,7 @@ key: {
                 hisoka.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `${media.title}.mp4`, caption: `🎥 𝒕𝒊𝒕𝒍𝒆 : ${media.title}\n💾 𝒇𝒊𝒍𝒆 𝒔𝒊𝒛𝒆 : ${media.filesizeF}\n🖇️ 𝒖𝒓𝒍 : ${isUrl(text)}\n🔮 𝒓𝒆𝒔𝒐𝒍𝒖𝒕𝒊𝒐𝒏 : ${args[1] || '360p'}` }, { quoted: m })
             }
             break
-	    
+	    */
 	    case 'couple': {
                 m.reply(mess.wait)
                 let anu = await fetchJson('https://raw.githubusercontent.com/iamriz7/kopel_/main/kopel.json')
@@ -1299,6 +1319,7 @@ key: {
                 if (!text) throw 'Enter Query Links!'
                 m.reply(mess.wait)
                 let anu = await fetchJson(api('zenz', '/api/downloader/facebook', { url: text }, 'apikey'))
+                let {url, title} = anu.result
                 hisoka.sendMessage(m.chat, { video: { url: anu.result.url }, caption: `📺 𝐓𝐢𝐭𝐥𝐞 : ${anu.result.title}`}, { quoted: m })
             }
             break

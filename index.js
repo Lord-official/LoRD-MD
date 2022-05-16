@@ -1,18 +1,28 @@
 require('./config')
+global.session_id = "VzlkNVBQd3c="
 const { default: hisokaConnect, useSingleFileAuthState, DisconnectReason, fetchLatestBaileysVersion, generateForwardMessageContent, prepareWAMessageMedia, generateWAMessageFromContent, generateMessageID, downloadContentFromMessage, makeInMemoryStore, jidDecode, proto } = require("@adiwajshing/baileys")
-const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
+
 const pino = require('pino')
 const { Boom } = require('@hapi/boom')
 const fs = require('fs')
 const chalk = require('chalk')
 const FileType = require('file-type')
+const {MakeSession} =require ('./lib/session')
 const path = require('path')
 const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
 
+let authFile = `./${sessionName}.json`
+if(!fs.existsSync(`./${sessionName}.json`)){
+    MakeSession(session_id,authFile)
+    }
+    
+const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
 global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
 
+
+setTimeout(() => {
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
 async function startHisoka() {
@@ -75,13 +85,15 @@ async function startHisoka() {
                 
 
                 if (anu.action == 'add') {
-               hehe = `𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 ${metadata.subject} @${num.split("@")[0]}`
+               hehe = `𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝑻𝒐 ${metadata.subject} @${user.jid.split("@")[0]}`
 const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                     templateMessage: {
                         hydratedTemplate: {
                             hydratedContentText: hehe,
+                               locationMessage: {
+                           jpegThumbnail: fs.readFileSync('./lib/lord.jpg')},
       
-                           jpegThumbnail: ppuser,
+                       //    jpegThumbnail: ppuser,
                             hydratedFooterText: `LoRD-MD`,
                             hydratedButtons: [{
                                 
@@ -587,7 +599,7 @@ hisoka.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options)
 }
 
 startHisoka()
-
+}, 3000);
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
