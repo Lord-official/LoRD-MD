@@ -4,6 +4,12 @@
 	"repository": "https://github.com/Lord-official/LoRD-MD",
 	"logo": "https://node-js-sample.herokuapp.com/node.png",
 	"keywords": ["multi-device"]
+"env": {
+ "SESSION_ID": {
+    "description": "The session ID you Recieved",
+    "required": true
+    }
+   },
 	    "buildpacks": [
 
         {
