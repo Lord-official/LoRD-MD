@@ -30,6 +30,8 @@ global.web = 'https://raselcomel.github.io'
 global.web1 = 'https://anu.rasell.repl.co'
 global.linkgh = 'https://github.com/Lord-official'
 
+global.session_id = process.env.SESSION_ID
+
 global.deslink = ''
 global.titlink = 'Folllow me on Instagram'
 global.bodlink = 'Lord-official'
