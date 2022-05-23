@@ -598,7 +598,7 @@ hisoka.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options)
 }
 
 startHisoka()
-}, 5000);
+}, 10000);
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
