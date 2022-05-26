@@ -9,26 +9,5 @@
     "description": "The session ID you Recieved",
     "required": false
     }
-},
-"buildpacks": [
-
-  {
-
-      "url": "heroku/nodejs"
-
-  },
-
-  {
-
-      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-
-  },
-
-  {
-
-      "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
-
-  }
-
-]
+}
 }
