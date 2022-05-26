@@ -1105,7 +1105,6 @@ case 'ytmp4': case 'video': case 'ytv': {
         let { ytv } = require('./lib/y2mate')
         let teks = text ? text : m.quoted && m.quoted.text
                 if (!teks) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 `
-               // let quality = args[1] ? args[1] : '360p'
                 let media = await ytv(teks)
                 if (media.filesize >= 100000) return m.reply('File Over Limit '+util.format(media))
 let buttons = [
