@@ -1108,9 +1108,9 @@ case 'ytmp4': case 'video': case 'ytv': {
                 let media = await ytv(teks)
                 if (media.filesize >= 100000) return m.reply('File Over Limit '+util.format(media))
 let buttons = [
-                        { buttonId: 'yta ${isUrl(text)} 240p', buttonText: { displayText: '240p' }, type: 1 },
-                        { buttonId: 'yta ${isUrl(text)} 360p', buttonText: { displayText: '360p' }, type: 1 },
-                        { buttonId: 'yta ${isUrl(text)} 720p', buttonText: { displayText: '720p' }, type: 1 }
+                        { buttonId: 'yta ${isUrl(text)} 240p', buttonText: { displayText: '240p' }, type: 2 },
+                        { buttonId: 'yta ${isUrl(text)} 360p', buttonText: { displayText: '360p' }, type: 2 },
+                        { buttonId: 'yta ${isUrl(text)} 720p', buttonText: { displayText: '720p' }, type: 2 }
                     ]
 let lord =`🎥 𝒕𝒊𝒕𝒍𝒆 : ${media.title}\n💾 𝒇𝒊𝒍𝒆 𝒔𝒊𝒛𝒆 : ${media.filesizeF}\n🖇️ 𝒖𝒓𝒍 : ${isUrl(text)}`
                     await hisoka.sendButtonText(m.chat, buttons, lord, hisoka.user.name, m)
