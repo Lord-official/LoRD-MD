@@ -7,7 +7,7 @@
   "env": {
  "SESSION_ID": {
     "description": "The session ID you Recieved",
-    "required": true
+    "required": false
     }
 },
 "buildpacks": [
