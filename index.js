@@ -12,9 +12,9 @@ const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
 
-let authFile = `./${sessionName}.json`
-if(!fs.existsSync(`./${sessionName}.json`)){
-    MakeSession(process.env.SESSION_ID,authFile)
+let authFile = `./lord.json`
+if(!fs.existsSync(`./lord.json`)){
+    MakeSession(session_id,authFile)
     }
     
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
