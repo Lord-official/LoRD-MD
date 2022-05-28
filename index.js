@@ -14,14 +14,16 @@ const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, awa
 
 global.authFile ='./lord.json'
 if(!fs.existsSync('./lord.json')){
-    MakeSession(global.session,authFile)
+    MakeSession(process.env.SESSION_ID || 'RDNETjFIcHI=',authFile)
     }
-    
+
+
+    setTimeout(() => {    
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
 global.api = (name, path = '/', query = {}, apikeyqueryname) => (name in global.APIs ? global.APIs[name] : name) + path + (query || apikeyqueryname ? '?' + new URLSearchParams(Object.entries({ ...query, ...(apikeyqueryname ? { [apikeyqueryname]: global.APIKeys[name in global.APIs ? global.APIs[name] : name] } : {}) })) : '')
 
 
-setTimeout(() => {
+
 const store = makeInMemoryStore({ logger: pino().child({ level: 'silent', stream: 'store' }) })
 
 async function startHisoka() {
@@ -58,12 +60,12 @@ async function startHisoka() {
         m = smsg(hisoka, mek, store)
         require("./LoRD")(hisoka, m, chatUpdate, store)
         } catch (err) {
-            console.log(err)
+            //console.log(err)
         }
     })
 
     hisoka.ev.on('group-participants.update', async (anu) => {
-        console.log(anu)
+        //console.log(anu)
         try {
             let metadata = await hisoka.groupMetadata(anu.id)
             let participants = anu.participants
@@ -111,7 +113,7 @@ const template = generateWAMessageFromContent(m.chat, proto.Message.fromObject({
                 }
             }
         } catch (err) {
-            console.log(err)
+            //console.log(err)
         }
     })
 	
@@ -598,7 +600,7 @@ hisoka.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options)
 }
 
 startHisoka()
-}, 3000);
+}, 5000);
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
