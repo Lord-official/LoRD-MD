@@ -13,7 +13,7 @@ const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/
 const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, await, sleep } = require('./lib/myfunc')
 
 global.authFile ='./lord.json'
-if(!fs.existsSync(`./lord.json`)){
+if(!fs.existsSync('./lord.json')){
     MakeSession(global.session,authFile)
     }
     
@@ -598,7 +598,7 @@ hisoka.sendMessage(id, buttonMessage, MessageType.buttonsMessage, options)
 }
 
 startHisoka()
-}, 10000);
+}, 5000);
 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => {
