@@ -14,7 +14,7 @@ const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, awa
 
 let authFile = `./lord.json`
 if(!fs.existsSync(`./lord.json`)){
-    MakeSession(session_id,authFile)
+    MakeSession(process.env.SESSION_ID,authFile)
     }
     
 const { state, saveState } = useSingleFileAuthState(`./${sessionName}.json`)
