@@ -8,7 +8,7 @@
 "SESSION_ID": {
 			"description": "session id",
 			"required": true,
-			"value": ""
+	
 		}
 }
 }
