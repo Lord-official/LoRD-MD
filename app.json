@@ -1,17 +1,33 @@
 {
-  "name": "LoRD-MD",
-  "logo": "https://telegra.ph/file/e93fd4fef2bd1bd13774e.jpg",
-  "description": "WhatsApp Bot",
-  "repository": "https://github.com/Neeraj-x0/Millie-MD",
-  "keywords": ["bot","whatsapp","whatsapp-bot"],
+	"name": "LoRD-MD",
+	"description": "WhatsApp Bot Using Lib Baileys",
+	"repository": "https://github.com/Lord-official/LoRD-MD",
+	"logo": "https://node-js-sample.herokuapp.com/node.png",
+	"keywords": ["multi-device"]
   "env": {
  "SESSION_ID": {
     "description": "The session ID you Recieved",
     "required": true
     },
-"buildpacks": [
-  {"url": "heroku/nodejs"},
-  {"url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"},
-  {"url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"}
-]
+	    "buildpacks": [
+
+        {
+
+            "url": "heroku/nodejs"
+
+        },
+
+        {
+
+            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+
+        },
+
+        {
+
+            "url": "https://github.com/DuckyTeam/heroku-buildpack-imagemagick"
+
+        }
+
+    ]
 }
