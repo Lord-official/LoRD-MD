@@ -16,13 +16,13 @@
 # DEPLOYING ON HEROKU
   <div align="left">
    
-### ⨷ FORK REPO
+## ⨷ FORK REPO
 
 - To use This bot you need fork this first <br>
 
 [Click Here To Fork](https://github.com/Lord-official/LoRD-MD/fork)
 
-### ⨷ SCAN QR
+## ⨷ SCAN QR
 
 <a href="https://bit.ly/Millie-QR"><img title="MILLIE - MD" src="https://repl.it/badge/github/quiec/whatsasena" width="300"></a>
 
