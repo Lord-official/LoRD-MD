@@ -26,6 +26,11 @@
 
 <a href="https://bit.ly/Millie-QR"><img title="MILLIE - MD" src="https://repl.it/badge/github/quiec/whatsasena" width="300"></a>
 
+## `DEPLOY`
+
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Lord-official/LoRD-MD)
+
+
 ### ⨷ DEPLOY
   
   
