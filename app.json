@@ -5,9 +5,10 @@
   "repository": "https://github.com/Lord-official/LoRD-MD",
   "keywords": ["bot","whatsapp","whatsapp-bot"],
   "env": {
- "SESSION_ID": {
-    "description": "The session ID you Recieved",
-    "required": false
-    }
+"SESSION_ID": {
+			"description": "session id",
+			"required": true,
+			"value": ""
+		}
 }
 }
