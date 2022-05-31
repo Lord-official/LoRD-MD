@@ -1101,6 +1101,23 @@ break
 
 //🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦🐦
 
+case 'awesomecheck':
+  case 'greatcheck':
+    case 'gaycheck':
+      case 'cutecheck':
+        case 'lesbicheck':
+          case 'lesbiancheck':
+             case 'hornycheck':
+                 case 'prettycheck':
+                    case 'lovelycheck':
+                      case 'uglycheck':
+				if (!text) return replay(`Tag Someone, Example : ${prefix + command} @lord`)
+					const lord = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14','15','16','17','18','19','20','21','22','23','24','25','26','27','28','29','30','31','32','33','34','35','36','37','38','39','40','41','42','43','44','45','46','47','48','49','50','51','52','53','54','55','56','57','58','59','60','61','62','63','64','65','66','67','68','69','70','71','72','73','74','75','76','77','78','79','80','81','82','83','84','85','86','87','88','89','90','91','92','93','94','95','96','97','98','99','100']
+					const hehe = lord[Math.floor(Math.random() * lord.length)]
+hisoka.sendMessage(m.chat, { text: `*${command}*\n\nName : ${q}\nAnswer : *${hehe}%*` }, { quoted: m })
+					break
+
+
 case 'ytmp4': case 'video': case 'ytv': {
         let { ytv } = require('./lib/y2mate')
         let teks = text ? text : m.quoted && m.quoted.text
@@ -1108,18 +1125,37 @@ case 'ytmp4': case 'video': case 'ytv': {
                 let media = await ytv(teks)
                 if (media.filesize >= 100000) return m.reply('File Over Limit '+util.format(media))
 let buttons = [
-                        { buttonId: 'yta ${isUrl(teks)} 240p', buttonText: { displayText: '240p' }, type: 1 },
-                        { buttonId: 'yta ${isUrl(teks)} 360p', buttonText: { displayText: '360p' }, type: 1 },
-                        { buttonId: 'yta ${isUrl(teks)} 720p', buttonText: { displayText: '720p' }, type: 1 }
+                        { buttonId: 'ytvv ${isUrl(text)} 240p', buttonText: { displayText: '240p' }, type: 1 },
+                        { buttonId: 'ytvv ${isUrl(text)} 360p', buttonText: { displayText: '360p' }, type: 1 },
+                        { buttonId: 'ytvv ${isUrl(text)} 720p', buttonText: { displayText: '720p' }, type: 1 }
                     ]
 let lord =`🎥 𝒕𝒊𝒕𝒍𝒆 : ${media.title}\n💾 𝒇𝒊𝒍𝒆 𝒔𝒊𝒛𝒆 : ${media.filesizeF}\n🖇️ 𝒖𝒓𝒍 : ${isUrl(text)}`
                     await hisoka.sendButtonText(m.chat, buttons, lord, hisoka.user.name, m)
 
              }
 break
-
-
-case 'bot': case 'lord': {
+case 'ytvv': {
+                let { ytv } = require('./lib/y2mate')
+                if (!text) throw `Example : ${prefix + command} https://youtube.com/watch?v=PtFMh6Tccag%27 360p`
+                let quality = args[1] ? args[1] : '360p'
+                let media = await ytv(text, quality)
+                if (media.filesize >= 100000) return m.reply('File Melebihi Batas '+util.format(media))
+                hisoka.sendMessage(m.chat, { video: { url: media.dl_link }, mimetype: 'video/mp4', fileName: `🎥 𝒕𝒊𝒕𝒍𝒆 : ${media.title}\n💾 𝒇𝒊𝒍𝒆 𝒔𝒊𝒛𝒆 : ${media.filesizeF}\n🖇️ 𝒖𝒓𝒍 : ${isUrl(text)}` }, { quoted: m })
+            }
+            break
+            case 'instagram': case 'ig': case 'igdl': {
+                if (!text) throw 'No Query Url!'
+                m.reply(mess.wait)
+                if (/(?:\/p\/|\/reel\/|\/tv\/)([^\s&]+)/.test(isUrl(text)[0])) {
+                    let anu = await fetchJson(api('zenz', '/downloader/instagram2', { url: isUrl(text)[0] }, 'apikey'))
+                    for (let media of anu.data) hisoka.sendFileUrl(m.chat, media, `Download Url Instagram From ${isUrl(text)[0]}`, m)
+                } else if (/\/stories\/([^\s&]+)/.test(isUrl(text)[0])) {
+                    let anu = await fetchJson(api('zenz', '/downloader/instastory', { url: isUrl(text)[0] }, 'apikey'))
+                    hisoka.sendFileUrl(m.chat, anu.media[0].url, `Download Url Instagram From ${isUrl(text)[0]}`, m)
+                }
+            }
+          break
+          case 'bot': case 'lord': {
     let fetch = require('node-fetch')
     let sonic = await fetch('http://api.brainshop.ai/get?bid=166097&key=HjOshKCh0sGkzYwo&uid=teamcloseup&msg=${text}')
     let json = await sonic.json()
