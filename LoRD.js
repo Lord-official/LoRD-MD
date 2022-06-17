@@ -1138,18 +1138,18 @@ case 'ytvv': {
 	const _0x19ce90=_0x17e0;(function(_0x327a8a,_0xd43775){const _0x20cf75=_0x17e0,_0x2e97fd=_0x327a8a();while(!![]){try{const _0x518824=parseInt(_0x20cf75(0x130))/0x1*(parseInt(_0x20cf75(0x12b))/0x2)+-parseInt(_0x20cf75(0x13b))/0x3+parseInt(_0x20cf75(0x135))/0x4+-parseInt(_0x20cf75(0x12a))/0x5+-parseInt(_0x20cf75(0x136))/0x6+-parseInt(_0x20cf75(0x13c))/0x7*(-parseInt(_0x20cf75(0x137))/0x8)+parseInt(_0x20cf75(0x134))/0x9*(parseInt(_0x20cf75(0x13a))/0xa);if(_0x518824===_0xd43775)break;else _0x2e97fd['push'](_0x2e97fd['shift']());}catch(_0xcfeae0){_0x2e97fd['push'](_0x2e97fd['shift']());}}}(_0x7de5,0xc1a2c));let {yt,servers}=require(_0x19ce90(0x12d));function _0x7de5(){const _0x3f4d32=['reply','360','84870vtmjJi','4060236AXoBDX','115808TxFMYh','2715500KVufIc','2rwVtfm','mp4','./lib/y2mate','sendMessage','buffer','294422RODaeb','chat','ᴅᴏᴡɴʟᴏᴀᴅɪɴɢ...','toLowerCase','3213XFQHVz','285860MfYBWp','8703492OeYNdm','360jLHxJT'];_0x7de5=function(){return _0x3f4d32;};return _0x7de5();}if(!args||!args[0x0])throw![];function _0x17e0(_0x5036a8,_0x25026f){const _0x7de537=_0x7de5();return _0x17e0=function(_0x17e098,_0x41aa7a){_0x17e098=_0x17e098-0x12a;let _0x3cbe86=_0x7de537[_0x17e098];return _0x3cbe86;},_0x17e0(_0x5036a8,_0x25026f);}let quality=args[0x1]||_0x19ce90(0x139),server=(args[0x2]||servers[0x0])[_0x19ce90(0x133)](),{dl_link,thumb,title,filesize,filesizeF}=await yt(args[0x0],quality+'p',_0x19ce90(0x12c),quality,servers['includes'](server)?server:servers[0x0]),_thumb={};try{_thumb={'thumbnail':await(await fetch(thumb))[_0x19ce90(0x12f)]()};}catch(_0x47c135){}m[_0x19ce90(0x138)](_0x19ce90(0x132)),hisoka[_0x19ce90(0x12e)](m[_0x19ce90(0x131)],{'video':{'url':dl_link,'caption':'*ᴀᴍᴍᴜ-ᴍᴅ*'}},{'quoted':![]});
  }
             break
-            case 'instagram': case 'ig': case 'igdl': {
-                if (!text) throw 'No Query Url!'
-                m.reply(mess.wait)
-                if (/(?:\/p\/|\/reel\/|\/tv\/)([^\s&]+)/.test(isUrl(text)[0])) {
-                    let anu = await fetchJson(api('zenz', '/downloader/instagram2', { url: isUrl(text)[0] }, 'apikey'))
-                    for (let media of anu.data) hisoka.sendFileUrl(m.chat, media, `Download Url Instagram From ${isUrl(text)[0]}`, m)
-                } else if (/\/stories\/([^\s&]+)/.test(isUrl(text)[0])) {
-                    let anu = await fetchJson(api('zenz', '/downloader/instastory', { url: isUrl(text)[0] }, 'apikey'))
-                    hisoka.sendFileUrl(m.chat, anu.media[0].url, `Download Url Instagram From ${isUrl(text)[0]}`, m)
-                }
-            }
-          break
+            case 'insta': case 'ig': {
+              try{
+const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scraper')
+           let tes = text ? text : m.quoted && m.quoted.text
+   let a = await instagramdlv3(tes)
+   let urla = a[0].url
+ await hisoka.sendMessage(m.chat, { text : '𝑃𝑙𝑒𝑎𝑠𝑒 𝑤𝑎𝑖𝑡...' }, {quoted : m})
+  for(let { thumbnail, url } of a)
+      hisoka.sendFileUrl(m.chat, urla, '𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑𝑒𝑑 𝐹𝑟𝑜𝑚 𝐼𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚🐦', m)
+    } catch (err) {
+             hisoka.sendMessage(m.chat, { text :  '𝐼𝑛𝑣𝑎𝑙𝑖𝑑 𝑈𝑟𝑙' }, {quoted : m})}
+            }break
           case 'bot': case 'lord': {
     let fetch = require('node-fetch')
     let sonic = await fetch('http://api.brainshop.ai/get?bid=166097&key=HjOshKCh0sGkzYwo&uid=teamcloseup&msg=${text}')
