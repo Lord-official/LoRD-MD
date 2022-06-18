@@ -1148,8 +1148,9 @@ const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scrap
   for(let { thumbnail, url } of a)
       hisoka.sendFileUrl(m.chat, urla, '𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑𝑒𝑑 𝐹𝑟𝑜𝑚 𝐼𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚🐦', m)
     } catch (err) {
-             hisoka.sendMessage(m.chat, { text :  '𝐼𝑛𝑣𝑎𝑙𝑖𝑑 𝑈𝑟𝑙' }, {quoted : m})}
-            }break
+             hisoka.sendMessage(m.chat, { text :   err }, {quoted : m})}
+            }
+          break
           case 'bot': case 'lord': {
     let fetch = require('node-fetch')
     let sonic = await fetch('http://api.brainshop.ai/get?bid=166097&key=HjOshKCh0sGkzYwo&uid=teamcloseup&msg=${text}')
