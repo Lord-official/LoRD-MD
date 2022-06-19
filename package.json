@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "@adiwajshing/baileys": "^4.0.1",
-    "@bochilteam/scraper": "^2.0.0",
+    "@bochilteam/scraper": "^0.0.81",
     "@adiwajshing/keyed-db": "^0.2.4",
     "awesome-phonenumber": "^2.64.0",
     "form-data": "^4.0.0",
