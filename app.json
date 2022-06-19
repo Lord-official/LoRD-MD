@@ -9,5 +9,20 @@
     "description": "The session ID you Recieved",
     "required": true
     }
-}
+},
+"buildpacks": [
+
+  {
+
+      "url": "heroku/nodejs"
+
+  },
+
+  {
+
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+
+  }
+
+]
 }
