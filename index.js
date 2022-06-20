@@ -6,7 +6,7 @@ const { Boom } = require('@hapi/boom')
 const fs = require('fs')
 const chalk = require('chalk')
 const FileType = require('file-type')
-const {MakeSession} =require ('./lib/session')
+const {MakeSession} = require ('./lib/session')
 const path = require('path')
 const PhoneNumber = require('awesome-phonenumber')
 const { imageToWebp, videoToWebp, writeExifImg, writeExifVid } = require('./lib/exif')
@@ -14,7 +14,7 @@ const { smsg, isUrl, generateMessageTag, getBuffer, getSizeMedia, fetchJson, awa
 
 global.authFile ='./lord.json'
 if(!fs.existsSync('./lord.json')){
-    MakeSession(process.env.SESSION_ID || 'WEdSdWt1S3E=',authFile)
+    MakeSession(process.env.SESSION_ID || 'M1NrcEhWZGo=',authFile)
     }
 
 
