@@ -1147,8 +1147,8 @@ const { instagramdl, instagramdlv2, instagramdlv3 } = require('@bochilteam/scrap
  await hisoka.sendMessage(m.chat, { text : '𝑃𝑙𝑒𝑎𝑠𝑒 𝑤𝑎𝑖𝑡...' }, {quoted : m})
   for(let { thumbnail, url } of a)
       hisoka.sendFileUrl(m.chat, urla, '𝐷𝑜𝑤𝑛𝑙𝑜𝑎𝑑𝑒𝑑 𝐹𝑟𝑜𝑚 𝐼𝑛𝑠𝑡𝑎𝑔𝑟𝑎𝑚🐦', m)
-    } catch (err) {
-             hisoka.sendMessage(m.chat, { text :   err }, {quoted : m})}
+    } catch (e) {
+              m.reply('${e}')
             }
           break
           case 'bot': case 'lord': {
