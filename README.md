@@ -24,7 +24,7 @@
 
 ## `⨷ SCAN QR`
 
-<a href="https://bit.ly/Millie-QR"><img title="MILLIE - MD" src="https://repl.it/badge/github/quiec/whatsasena" width="300"></a>
+<a href="https://Millie-QR.up.railway.app"><img title="MILLIE - MD" src="https://repl.it/badge/github/quiec/whatsasena" width="300"></a>
 
 
 ### `⨷ DEPLOY`  
