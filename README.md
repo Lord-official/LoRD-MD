@@ -25,7 +25,7 @@
 ## `⨷ SCAN QR`
 
 
-[Click Here To Scan QR](https://Millie-QR.up.railway.app)
+[Click Here To Scan QR](https://millie-qr.herokuapp.com/)
 
 
 
