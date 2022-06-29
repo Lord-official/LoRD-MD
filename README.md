@@ -29,7 +29,7 @@
 
 
 
-### `⨷ DEPLOY`  
+## `⨷ DEPLOY`  
   
 
 👉 <b>Copy this link and paste it on your browser Change Lord-official to your github username<b> <br><br>
