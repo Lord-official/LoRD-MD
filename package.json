@@ -38,7 +38,7 @@
     "file-type": "^16.5.3",
     "fluent-ffmpeg": "^2.1.2",
     "fs": "0.0.1-security",
-    "got": "^11.8.3",
+    "got": "^12.0.0",
     "g-i-s": "^2.1.6",
     "google-it": "^1.6.2",
     "human-readable": "^0.2.1",
