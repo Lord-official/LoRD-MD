@@ -29,7 +29,7 @@
     "jsdom": "^18.1.1",
     "pastebin-js":"^1.0.6",
     "acrcloud": "1.4.0",
-    "axios": "^0.24.0",
+    "axios": "^0.27.0",
     "crypto-js":"4.1.1",
     "chalk": "^4.1.2",
     "cheerio": "^1.0.0-rc.10",
