@@ -24,7 +24,7 @@
     "@adiwajshing/baileys": "^4.0.1",
     "@bochilteam/scraper": "3.0.0",
     "@adiwajshing/keyed-db": "^0.2.4",
-    "awesome-phonenumber": "^2.64.0",
+    "awesome-phonenumber": "^3.0.0",
     "form-data": "^4.0.0",
     "jsdom": "^18.1.1",
     "pastebin-js":"^1.0.6",
