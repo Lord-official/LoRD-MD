@@ -30,7 +30,7 @@
     "pastebin-js":"^1.0.6",
     "acrcloud": "1.4.0",
     "axios": "^0.27.0",
-    "crypto-js":"4.1.1",
+    "crypto-js":"4.2.0",
     "chalk": "^5.0.0",
     "cheerio": "^1.0.0-rc.10",
     "child_process": "^1.0.2",
